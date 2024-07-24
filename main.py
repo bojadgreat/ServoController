@@ -25,6 +25,7 @@ while True:
         for handLms in multiRes:
             mpDraw.draw_landmarks(img, handLms, mpHands.HAND_CONNECTIONS)
 
+
             for id, lm in enumerate(handLms.landmark):
                 h, w, c = img.shape
                 cx, cy = int(lm.x * w), int(lm.y * h)
